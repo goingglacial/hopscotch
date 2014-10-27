@@ -1,0 +1,20 @@
+img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+#map-canvas {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	position: relative;
+}
+
+.angular-google-map-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
