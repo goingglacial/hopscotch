@@ -57,12 +57,19 @@
 		$scope.message = ''
 	});
 
-	hopscotchApp.controller('mapController', function($scope) {
-		$scope.message = ''
-		$scope.center = {
-			latitude: 37.09024,
-			longitude: -95.712891
-		};
-		$scope.zoom = 4;
-		$scope.fit = true;
-	});
+	hopscotchApp.controller('mapController', ['$scope', '$timeout', function($scope, $timeout) {
+	    var marker, map;
+	    $scope.$on('mapInitialized', function(evt, evtMap) {
+	      map = evtMap;
+	      marker = map.markers[0];
+	    });
+	    $scope.centerChanged = function(event) {
+	      $timeout(function() {
+	        map.panTo(marker.getPosition());
+	      }, 3000);
+	    }
+	    $scope.click = function(event) {
+	      map.setZoom(8);
+	      map.setCenter(marker.getPosition());
+	    }
+	  }]);

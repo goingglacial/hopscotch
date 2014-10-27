@@ -4,16 +4,7 @@
 
 </div>
 
-<div ng-controller="mapController">
-	<map id='myMap'
-		center="center"
-		zoom="zoom"
-		draggable="true">
+<div ng-controller="mapController" class="ng-scope">
+	<map zoom="4" center="37.09024, -95.712891" on-center-changed="centerChanged()">
 	</map>
 </div>
-
-
-
-
-
-
