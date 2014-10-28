@@ -4592,6 +4592,9 @@ a.list-group-item.active > .badge,
     font-family: 'Gloria Hallelujah', cursive;
     color: #000080;   
   }
+  .jumbotron .h1:focus {
+    color: #ff0000;
+  }
 }
 .thumbnail {
   display: block;
