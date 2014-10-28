@@ -39,7 +39,6 @@
 	// create the controller and inject Angular's $scope
 	hopscotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
-		$scope.message = 'Tap kegs from east to west!';
 		$scope.image = 'https://lh6.googleusercontent.com/-JBeBwwUf9y4/VE7QgzF1zaI/AAAAAAAAC_U/5ONGOPTZ3YI/w1774-h1118-no/beers.gif';
 	});
 

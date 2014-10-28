@@ -4098,7 +4098,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #000000;
+  background-color: #000080;
   border-color: #e7e7e7;
   font-color: #FFFFFF;
 }
@@ -4590,7 +4590,7 @@ a.list-group-item.active > .badge,
   .jumbotron .h1 {
     font-size: 63px;
     font-family: 'Gloria Hallelujah', cursive;
-    color: black;    
+    color: #000080;   
   }
 }
 .thumbnail {
