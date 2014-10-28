@@ -4098,7 +4098,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #000080;
+  background-color: #7F00FF;
   border-color: #e7e7e7;
   font-color: #FFFFFF;
 }
@@ -4107,7 +4107,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ff0000;
+  color: #34dddd;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -4118,7 +4118,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ff0000;
+  color: #34dddd;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -4590,7 +4590,7 @@ a.list-group-item.active > .badge,
   .jumbotron .h1 {
     font-size: 63px;
     font-family: 'Gloria Hallelujah', cursive;
-    color: #000080;   
+    color: #7F00FF;   
   }
   .jumbotron .h1:focus {
     color: #ff0000;

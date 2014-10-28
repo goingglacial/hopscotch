@@ -58,8 +58,7 @@
 
 	hopscotchApp.controller('mapController', ['$scope', '$timeout', function($scope, $timeout) {
 	    var marker, map;
-	    $scope.$on('mapInitialized', function(evt, evtMap) {
-	      map = evtMap;
+	    $scope.$on('mapInitialized', function(event, map) {
 	      marker = map.markers[0];
 	    });
 	    $scope.centerChanged = function(event) {
@@ -72,3 +71,19 @@
 	      map.setCenter(marker.getPosition());
 	    }
 	  }]);
+
+	hopscotchApp.controller('mapController', function($scope) {
+	  $scope.$on('mapInitialized', function(event, map) {
+	    navigator.geolocation.getCurrentPosition(function(position) {
+	      var pos = new google.maps.LatLng(position.coords.latitude,
+	                                       position.coords.longitude);
+	      var infowindow = new google.maps.InfoWindow({
+	        map: map,
+	        position: pos,
+	        content: 'Tap kegs nearby!'
+	      });
+
+	      map.setCenter(pos);
+	    });
+	  });
+	});
