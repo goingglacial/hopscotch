@@ -29,7 +29,7 @@
 				controller : 'searchController'
 			})
 
-			// route for mapit page
+			// route for mapyourtap page
 			.when('/map', {
 				templateUrl : 'pages/map.html',
 				controller : 'mapController'
@@ -40,17 +40,17 @@
 	hopscotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
 		$scope.message = 'Tap kegs from east to west!';
-		$scope.image = 'http://hugelike.com/wp-content/uploads/2013/07/us-states-beer.jpg';
+		$scope.image = 'https://lh6.googleusercontent.com/-JBeBwwUf9y4/VE7QgzF1zaI/AAAAAAAAC_U/5ONGOPTZ3YI/w1774-h1118-no/beers.gif';
 	});
 
 	hopscotchApp.controller('aboutController', function($scope) {
-		$scope.message = 'Annie Kramer is a proud beer snob with a strong preference for Left Hand Milk Stout. Thanks, Colorado!';
-		$scope.image = 'http://hugelike.com/wp-content/uploads/2013/07/us-states-beer.jpg';
+		$scope.message = 'Annie Kramer is a proud beer snob with a strong preference for Left Hand Nitro Milk Stout.';
+		$scope.image = 'https://lh6.googleusercontent.com/-JBeBwwUf9y4/VE7QgzF1zaI/AAAAAAAAC_U/5ONGOPTZ3YI/w1774-h1118-no/beers.gif';
 	});
 
 	hopscotchApp.controller('contactController', function($scope) {
 		$scope.message = 'Feel free to drop me a line for infinite brew wisdom!';
-		$scope.image = 'http://hugelike.com/wp-content/uploads/2013/07/us-states-beer.jpg';
+		$scope.image = 'http://beerstreetjournal.com/wp-content/uploads/Unita-Yard-Sale1.jpg';
 	});
 
 	hopscotchApp.controller('searchController', function($scope) {
